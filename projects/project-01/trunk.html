@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> hauntedhouse </title>
+        <link rel ="icon" href="game/assets/hauntedhouse-logo.png"/>
+        <link href='game/styles/styler.css' rel="stylesheet">
+    </head>
+    <body>
+        <img src = 'game/assets/trunk2.png' width="250" height="100">
+        <span class = 'bold'>Congraduations!!You have found a small crucifix.</span>
+        <h4>
+            <a href='Forest.html?gp=0&hp=100&rp=1&weapon=0&keys=0' >Find shelter</a>
+        </h4>
+        <iframe src='inventory.html' id=inventory height=100 width=160></iframe>
+        <audio src="game/assets/spooky-sound.mp3" autoplay loop></audio>
+        <script>
+            inventory.src += location.search;
+            forest.href += location.search;
+        </script>
+    </body>
+<html>

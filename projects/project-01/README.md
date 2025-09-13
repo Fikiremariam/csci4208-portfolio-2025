@@ -1,9 +1,9 @@
 
 # Haunted House
 
->live demo:
+>live demo : https://fikiremariam.github.io/csci4208-portfolio-2025/projects/project-01/
 
->Repo:
+>Repo : https://github.com/Fikiremariam/csci4208-portfolio-2025
 
 # About the game
 

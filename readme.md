@@ -24,12 +24,16 @@
 ## ✅ Submission Status (automatically updated)
 
 <!-- STATUS:START -->
-
-| Item                                                                                                                     | Key      | Status |
-| ------------------------------------------------------------------------------------------------------------------------ | -------- | ------ |
-| Lab-01 — HTML-first Interactive Game (minimal JS) [#1](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/1) | `lab-01` | open   |
-| Lab-02 — CSS: Crash Course [#2](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/2)                        | `lab-02` | open   |
-
+| Item | Key | Status |
+|---|---|---|
+| Capstone-01 — Find a Team [#5](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/5) | `capstone-01` | open |
+| Lab-01 — HTML-first Interactive Game (minimal JS) [#1](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/1) | `lab-01` | closed |
+| Lab-02 — CSS: Crash Course [#2](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/2) | `lab-02` | closed |
+| Lab-03 — Bootstrap: Responsive Portfolio [#3](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/3) | `lab-03` | closed |
+| Lab-04 — JavaScript Basics: Hi–Lo Game (MVP → MVC) [#6](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/6) | `lab-04` | closed |
+| Lab-05 — JavaScript OOP + Phaser: Dodger Game [#7](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/7) | `lab-05` | closed |
+| Project-0 — Set up Repo, Project Board, Actions & Pages [#8](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/8) | `project-00` | open |
+| Project-01 — Interactive Game in HTML & CSS [#4](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/4) | `project-01` | closed |
 <!-- STATUS:END -->
 
 ---

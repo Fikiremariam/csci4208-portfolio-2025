@@ -2,9 +2,9 @@
 
 > Personal progress page for CSCI4208. Keep this file updated as you complete labs, projects, and capstone milestones.
 
-- **Name:** <Your Name>
-- **Project Board (Project v2):** <paste your board URL here>
-- **Live Portfolio (GitHub Pages):** <https://USERNAME.github.io/REPO/>
+- **Name:** Fikiremariam Tsegaye
+- **Project Board (Project v2):** <https://fikiremariam.github.io/csci4208-portfolio-2025/projects>
+- **Live Portfolio (GitHub Pages):** <https://fikiremariam.github.io/csci4208-portfolio-2025/>
 
 ---
 
@@ -24,12 +24,13 @@
 ## ✅ Submission Status (automatically updated)
 
 <!-- STATUS:START -->
-| Item | Key | Status |
-|---|---|---|
-| Lab-01 — HTML-first Interactive Game (minimal JS) [#1](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/1) | `lab-01` | open |
-| Lab-02 — CSS: Crash Course [#2](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/2) | `lab-02` | open |
-<!-- STATUS:END -->
 
+| Item                                                                                                                     | Key      | Status |
+| ------------------------------------------------------------------------------------------------------------------------ | -------- | ------ |
+| Lab-01 — HTML-first Interactive Game (minimal JS) [#1](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/1) | `lab-01` | open   |
+| Lab-02 — CSS: Crash Course [#2](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/2)                        | `lab-02` | open   |
+
+<!-- STATUS:END -->
 
 ---
 
@@ -70,6 +71,7 @@
 ## 📋 How I update this page
 
 - **When I finish a lab/project**
+
   - Put files in `labs/<key>/` or `projects/<key>/`.
   - Add **live** and/or **source** links in the table above.
   - Update the **Status** cell (and apply labels on the related issue).
@@ -82,19 +84,18 @@
 
 ## 🧰 Handy links
 
-- **Project board:** <paste URL>  
-- **Live portfolio:** <paste URL>  
+- **Project board:** <paste URL>
+- **Live portfolio:** <paste URL>
 - **Instructor roadmap (source of truth):** <link to instructor repo or roadmap.json>
 
 ---
 
 ## 🔧 Troubleshooting
 
-- **Issues disabled?** Settings → General → Features → **Issues**.  
-- **Items not on Project?** Project **Workflows → Auto-add** must be **On**. Use **Add items** once to backfill, or re-run the seeder.  
+- **Issues disabled?** Settings → General → Features → **Issues**.
+- **Items not on Project?** Project **Workflows → Auto-add** must be **On**. Use **Add items** once to backfill, or re-run the seeder.
 - **Pages 404?** Ensure Pages is enabled (main/root) and your folder has an `index.html`.
 
 ---
 
 <sub>Last updated: <!-- yyyy-mm-dd --> </sub>
-

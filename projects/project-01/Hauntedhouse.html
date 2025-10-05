@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title> Haunted House game </title>
+    <link rel="icon" href="game/assets/hauntedhouse-logo.png" />
+    <link href='game/styles/styler.css' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Haunted House</h1>
+    <hr>
+    <p>Mystery is what the haunted seek, and the haunted house delivers!</p>
+    <img src='game/assets/chatgpt.png' width="900">
+    <h4>
+        <a id="livingroom"  href=# onclick="livingroom()">check the living room</a>
+    </h4>
+    <h4>
+        <a id="basement"href='basement.html'>Check the basement</a>
+    </h4>
+    <h4>
+        <a id="kitchen" href='kitchen.html'> Check the kitchen</a>
+    </h4>
+    <iframe src='inventory.html' id=inventory height=100 width=200></iframe>
+</body>
+<script>
+    inventory.src += location.search; //concat the search parameter to the iframe's src attribute
+    kitchen.href += location.search; //append queryString to kitchen href
+    basement.href += location.search; //append queryString to basement href
+
+    var queryString = new URLSearchParams(location.search);
+    var gp = +queryString.get("gp");
+    var keys = +queryString.get("keys");
+    ;
+
+    // Initialize inventory dynamically
+    inventory.src = "inventory.html?" + queryString.toString();
+
+    queryString.set("gp", gp+25); // set rp+25
+    queryString.set("keys", keys+1); // set keys+1
+    livingroom.href = 'livingroom.html?' + queryString.toString();   // updates the haunted house inventory
+
+    function livingroom() {
+        document.body.innerHTML =
+            `<h1>Living room</h1>
+            <img src='game/assets/coins and key.png' width="480">
+            <p><i>Congratulation, you have found 25 coins and a key.</p>
+            <a href='Hauntedhouse.html?${queryString.toString()}'>Exit Room</a><br>
+            <audio autoplay>
+            </audio>
+            <iframe src='inventory.html' id=inventory height=100 width=200></iframe>`
+        ;// update inventory iframe dynamically
+        inventory.src = "inventory.html?" + queryString.toString();
+    }
+</script>
+<html>

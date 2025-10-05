@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title> hauntedhouse </title>
+        <link rel='icon' href='game/assets/hauntedhouse-logo.png' />
+        <link href='game/styles/styler.css' rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    </head>
+    <body>
+        <hr>
+        inventory:
+        <hr>
+        <table>
+            <tr>
+                <th> &#128176; </th>
+                <th> &#128156; </th>
+                <th> &#128326; </th>
+                <th> &#128273; </th>
+                <th> &#128481; </th>
+            </tr>
+            <tr>
+                <td id='gp'>0</td>
+                <td id='hp'>0</td>
+                <td id='rp'>0</td>
+                <td id='keys'>0</td>
+                <td id='weapon'>0</td>
+            </tr>
+        </table>
+        <script>
+            var queryString = new URLSearchParams(location.search);
+            gp.innerText = queryString.get("gp");
+            hp.innerText = queryString.get("hp");
+            rp.innerText = queryString.get("rp");
+            keys.innerText = queryString.get("keys");
+            weapon.innerText = queryString.get("weapon");
+        </script>
+    </body>
+<html>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title> hauntedhouse </title>
+        <link rel="icon" href="game/assets/hauntedhouse-logo.png" />
+    </head>
+    <body>
+        <h1> kitchen</h1>
+        <img src='game/assets/white light transport GIF by Pugatory.gif' width="280">
+        <p><i>you have been teleported.To the witches' lair!! </p>
+        <img src='game/assets/img.jpg' width="300">
+        <p><i>She is selling items to lost souls.What do you want to buy?</i></p>
+        <div>
+            <button onclick='food()'> Heal &#128156; <br> <i> heal 50 hp </i> </button>
+            <button onclick='weaponBuy()'> weapon &#128481; <br> <i> gain a weapon </i> </button>
+        </div>
+        <a id="Hauntedhouse" href='Hauntedhouse.html'> leave</a><br>
+        <iframe src='inventory.html' id=inventory height=100 width=200></iframe>
+    </body>
+    <script>
+        inventory.src += location.search;
+        //Use URLSerachParams class to get the values
+        var queryString = new URLSearchParams(location.search);
+        var gp = +queryString.get("gp");
+        var hp = +queryString.get("hp");
+        var weapon = +queryString.get("weapon") || 0 ;
+
+        // Update inventory iframe dynamically
+        inventory.src = "inventory.html?" + queryString.toString();
+
+        function food() {
+            if (gp > 0 && hp < 200) {
+            gp -= 5;       // update local gp
+            hp += 50;      // update local hp
+
+            queryString.set('gp', gp);
+            queryString.set('hp', hp );
+            // Update iframe immediately without reloading
+            inventory.src = "inventory.html?" + queryString.toString();
+            // Update leave link dynamically
+            Hauntedhouse.href = "Hauntedhouse.html?" + queryString.toString();
+        }
+    }
+        function weaponBuy() {
+        if (gp >= 5 && weapon < 3){
+            gp -= 5;           // update local gp
+            weapon += 1;       // update local weapon
+
+            queryString.set('gp', gp );// update gp
+            queryString.set('weapon', weapon );// update weapon
+            // Update inventory iframe dynamically
+            inventory.src = "inventory.html?" + queryString.toString();
+            // Update leave link dynamically
+            Hauntedhouse.href = "Hauntedhouse.html?" + queryString.toString();
+        }
+    }
+    </script>
+<html>

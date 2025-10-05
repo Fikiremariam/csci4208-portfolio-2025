@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> hauntedhouse </title>
+        <link rel='icon' href='game/assets/hauntedhouse-logo.png' />
+        <link href='game/styles/styler.css' rel="stylesheet">
+    </head>
+    <body>
+        <h1>Story Introduction</h1>
+        <hr>
+        <img src='game/assets/carbreakdown.png' width='900'>
+        <p class="italic large-text margin">
+            Greetings, traveler. The night is creeping in, and your car is broken.
+            You must find shelter before it’s too late.\
+        </p>
+        <ul class="choices">
+            <li>   <a id ='forest' href='forest.html'>Go without checking the trunk</a></li>
+            <li>   <a href=# onclick='die()'>stay in the car and wait.</a></li>
+            <li>   <a id ='trunk'href='trunk.html'>Search the car trunk.</a></li>
+        </ul> 
+        <iframe src='inventory.html' id=inventory height=100 width=200></iframe>
+        <hr>
+        <script>
+            inventory.src += location.search; //concat the search parameter to the iframe's src attribute
+            forest.href += location.search; //append queryString to forest href
+
+            //update the inventory if the user goes checks trunk
+            var queryString = new URLSearchParams(location.search);
+            queryString.set("rp", 1); // set rp=1
+            trunk.href = 'trunk.html?' + queryString.toString();    // updates the trunk
+
+        function die() {
+            document.body.innerHTML = (
+                `<h1>You Die</h1>
+                <img src='game/assets/bear.gif' width='800'/>
+                <p>A giant Bear breaks in your car and eats you.</p>
+                <a href='index.html'><h4> Game Over </h4></a>
+                <audio autoplay>
+                    <source src="game/assets/bearnoise.mp3">
+                </audio>`
+            );
+        }
+        </script>
+    </body>
+<html>

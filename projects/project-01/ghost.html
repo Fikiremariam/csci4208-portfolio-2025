@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Haunted House - Ghost</title>
+    <link rel="icon" href="game/assets/hauntedhouse-logo.png" />
+    <link href='game/styles/styler.css' rel="stylesheet">
+</head>
+<body>
+    <h1>Ghost Encounter</h1>
+    <hr>
+    <img src="game/assets/ghosts-paranormal.gif" width="480" id="ghost">
+    <p id="battleText">You have been trapped by a ghost!</p>
+    <div id="options">
+        <button onclick="attack()">Fight</button>
+        <a href="#" onclick="retreat()"><button>Retreat</button></a>
+    </div>
+    <hr>
+    <iframe src="inventory.html" height="100" width="150" id="inventory"></iframe>
+</body>
+<script>
+    var queryString = new URLSearchParams(location.search);
+    var gp = +queryString.get("gp");
+    var hp = +queryString.get("hp");
+    var rp = +queryString.get("rp");
+    var weapon = +queryString.get("weapon");// player's attack power
+
+    var ghostHP = 5; // each weapon hit does 5 damage
+    var ghostAP = 50;
+
+    inventory.src = 'inventory.html?' + queryString.toString();
+
+    function attack() {
+        // Player attacks ghost
+        ghostHP -= weapon;
+
+        if (ghostHP <= 0) {
+            // if Ghost is  defeated  go to win page
+            queryString.set('gp', gp + 3);
+            queryString.set('hp', hp);
+            inventory.src = 'inventory.html?' + queryString.toString();
+            //redirects to win.html when ghost dies
+            window.location.href = 'win.html?' + queryString.toString();
+        } else {
+            // Ghost attacks player
+            hp -= ghostAP;
+            queryString.set('hp', hp);
+            inventory.src = 'inventory.html?' + queryString.toString();
+            battleText.innerHTML = `You hit for ${weapon} damage, ghost has ${ghostHP} HP left.<br> You take ${ghostAP} damage.`;
+        }
+
+        if (hp <= 0) {
+            battleText.innerHTML = `You Died.`;
+            options.innerHTML = `<a href='index.html'><button>Game Over</button></a>`;
+        }
+    }
+
+    function retreat() {
+        if (rp > 0) {
+            rp--;
+            queryString.set('rp', rp);
+            inventory.src = 'inventory.html?' + queryString.toString();
+            window.location.href = 'Basement.html?' + queryString.toString();
+        } else {
+            battleText.innerHTML = "You don't have enough RP to retreat!";
+        }
+    }
+</script>
+</html>

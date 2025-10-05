@@ -1,0 +1,60 @@
+/* Page */
+body {
+    background-color: #090808;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Bangers';
+    color: #ff4444;
+    margin: 20px 0;
+}
+
+h4 {
+    color: #ff4444;
+    margin: 10px 0;
+}
+
+/* Image container */
+.background-image {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Outline */
+.outline {
+    outline: 3px dashed rgb(55, 3, 3);
+}
+
+/* Start button */
+.centerstart button {
+    font-size: 22px;
+}
+
+.centerstart button:hover {
+    background-color: red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+/* Choices list */
+ul.choices {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Image */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

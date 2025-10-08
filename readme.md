@@ -33,7 +33,9 @@
 | Lab-02 — CSS: Crash Course [#2](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/2) | `lab-02` | closed |
 | Lab-03 — Bootstrap: Responsive Portfolio [#3](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/3) | `lab-03` | closed |
 | Lab-04 — JavaScript Basics: Hi–Lo Game (MVP → MVC) [#6](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/6) | `lab-04` | closed |
-| Lab-05 (Alt) — JavaScript OOP + Phaser: Platformer Game [#24](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/24) | `lab-05` | open |
+| Lab-05 (Alt) — JavaScript OOP + Phaser: Platformer Game [#26](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/26) | `lab-05` | open |
+| Lab-05 — JavaScript OOP + Phaser: Dodger Game [#25](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/25) | `lab-05` | open |
+| Lab-05 — JavaScript OOP + Phaser: Dodger Game [#24](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/24) | `lab-05` | closed |
 | Lab-05 — JavaScript OOP + Phaser: Dodger Game [#23](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/23) | `lab-05` | open |
 | Lab-05 — JavaScript OOP + Phaser: Dodger Game [#22](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/22) | `lab-05` | open |
 | Lab-05 — JavaScript OOP + Phaser: Dodger Game [#21](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/21) | `lab-05` | open |
@@ -51,7 +53,7 @@
 | Project-01 — Interactive Game in HTML & CSS [#4](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/4) | `project-01` | closed |
 | Project-02 — Sprint 3: Full Feature Set & Polish [#13](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/13) | `project-02` | open |
 | Project-02 — Sprint 2: MVP Vertical Slice [#12](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/12) | `project-02` | open |
-| Project-02 — Sprint 1: Pitch & Roadmap Proposal [#11](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/11) | `project-02` | open |
+| Project-02 — Sprint 1: Pitch & Roadmap Proposal [#11](https://github.com/Fikiremariam/csci4208-portfolio-2025/issues/11) | `project-02` | closed |
 <!-- STATUS:END -->
 >>>>>>> 2924f311a60675d6ad47373cd959ef62d2e8018e
 

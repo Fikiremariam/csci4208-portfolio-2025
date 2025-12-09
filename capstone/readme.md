@@ -65,9 +65,9 @@ Use the matching **key folders** above (`capstone-01` … `capstone-09`) and kee
 ```md
 # <Capstone Milestone Title> — <capstone-key>
 
-**Team repo:** https://github.com/<team>/<repo>  
+**Team repo:** https://github.com/KellerPayne/csci4208-capstone-project-repo <team>/<repo>  
 **Project (v2) board:** <URL> (public or shared with instructors)  
-**Live demo / recording (if applicable):** <URL>
+**Live demo / recording (if applicable):https://github.com/KellerPayne/csci4208-capstone-project-repo/public/index.html <URL>
 
 ## Deliverables for this phase
 - <bullet 1 mapped to the rubric>
